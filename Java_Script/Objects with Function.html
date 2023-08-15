@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects with Function</title>
+        <style type="text/css">
+            .abc{
+                font-weight: bold ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>Output</p>
+        <p class="abc">Printing</p>
+        <p>person;<br/>
+        {name: 'Kalob', Age: 56, height: "6'0"}</p>
+        <p class="abc">Adding a element into person object</p>
+        <p>person['Fav food']="Pizza";<br/>
+            'Pizza'<br/>
+            person<br/>
+            {name: 'Kalob', Age: 56, height: "6'0", Fav food: 'Pizza'}</p>
+        <p class="abc">Adding a function</p>
+        <p>person['gender']=function()
+                            {
+                                console.log("HI");
+                            }<br/>
+            ƒ (){console.log("HI");}</p>
+            <p class="abc"> calling the function:</p>
+            <p>person.gender();<br/>
+                VM282:1 HI<br/>
+                undefined<br/>
+                person.gender;<br/>
+                ƒ (){console.log("HI");}</p>
+        <script src="Objects with Function.js"></script>
+        
+    </body>
+</html>

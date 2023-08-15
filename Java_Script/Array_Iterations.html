@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width initial-sale=1.0">
+        <title>Array_Iterations</title>
+    </head>
+    <body>
+        <p>We can access arrays using 2 ways</p>
+        <ol style="list-style-type:none">
+            <li>For loop</li>
+            <li>For each method</li>
+        </ol>
+        <b>For loop</b>
+        <ul style="list-style-type: none">
+            <li>list=["One","Two",32,[],{}];</li>
+            (5) ['One', 'Two', 32, Array(0), {…}]</li>
+            list;</li>
+            (5) ['One', 'Two', 32, Array(0), {…}]</li>
+            <li>for(let i=0;i&lt;list.length;i++){   </li>         
+            <li>   console.log(`index: ${i} value: ${list[i]}`);</li>
+            <li>}</li>
+            <li>VM346:2 index: 0 value: One</li>
+            <li>VM346:2 index: 1 value: Two</li>
+            <li>VM346:2 index: 2 value: 32</li>
+            <li>VM346:2 index: 3 value: </li>
+            <li>VM346:2 index: 4 value: [object Object]</li>
+            <li>undefined</li>
+
+        </ul>
+        <b>Using forEach method</b>
+        
+        <ul style="list-style-type:none">
+            <li>list=["One","Two",3,2,[],{}];</li>
+            <li>(6) ['One', 'Two', 3, 2, Array(0), {…}]</li>
+            <li>list.forEach({</li>
+            <li>    console.log(`index :${i} value : ${list[i]`)</li>
+            <li>VM520:2 Uncaught SyntaxError: Unexpected token '.'</li>
+            <li>list.forEach(num=>{</li>
+            <li>console.log(num);</li>
+            <li>})</li>
+            <li>VM694:2 One</li>
+            <li>VM694:2 Two</li>
+            <li>VM694:2 3</li>
+            <li>VM694:2 2</li>
+            <li>VM694:2 []</li>
+            <li>VM694:2 {}</li>
+            <li>undefined</li>
+        </ul>
+        
+
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Selecting_Multiple_DOM_Nodes</title>
+        <style type="text/css">
+            p{
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p>We use classes concept here</p>
+        <div class="class">This is class1</div>
+        <div class="class">This is class2</div>
+        <div class="class">This is class3</div>
+        <div class="class">This is class4</div>
+        <div title="Select only first class" style="font-family:Arial, Helvetica, sans-serif"><u>querySelector only 1 class</u></div>
+        <div>
+            const elems=document.querySelector(".class");<br/>
+            undefined<br/>
+            elems;<br/>
+            <div class=​"class">​This is class1​</div>​
+            typeof(elems);<br/>
+            'object'
+        </div>
+        <div title="For selecting all classes" style="font-family:Arial, Helvetica, sans-serif "><u>querySelectorAll for all classes</u></div>
+        <div>
+            const elems=document.querySelectorAll(".class");<br/>
+            undefined<br/>
+            elems;<br/>
+            NodeList(4) [div.class, div.class, div.class, div.class]0: div.class1: div.class2: div.class3: div.classlength: 4[[Prototype]]: NodeList<br/>
+            typeof(elems);<br/>
+            'object'
+        </div>
+        <p>We can alse use there tags</p>
+        <ol style="list-style-type: none;">
+            <li>This is list1</li>
+            <li>This is list2</li>
+            <li>This is list3</li>
+        </ol>
+        <div>For tags</div>
+        <div>
+            const elems=document.querySelectorAll("class");
+            undefined
+            elems;
+            NodeList []length: 0[[Prototype]]: NodeList
+            elems.innertext("HI Keerthi");
+        </div>
+    </body>
+</html>
